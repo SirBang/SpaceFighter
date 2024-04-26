@@ -43,13 +43,13 @@ namespace JGM.Game
             }
 
             float whiteFillAmount = m_currentWhiteFillValue / m_maxValue;
-            m_whiteFillImage.fillAmount = Mathf.Clamp(whiteFillAmount, 0, 1);
+            m_whiteFillImage.fillAmount = Mathf.Clamp(whiteFillAmount, 0, 1.5);
         }
 
         private void RefreshFill()
         {
             float fillAmount = m_currentValue / m_maxValue;
-            fillAmount = Mathf.Clamp(fillAmount, 0, 1);
+            fillAmount = Mathf.Clamp(fillAmount, 0, 1.5);
 
             if (m_fillImage.fillAmount != fillAmount)
             {
